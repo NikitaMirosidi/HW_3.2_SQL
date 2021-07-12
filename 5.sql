@@ -1,1 +1,5 @@
-select * from homework_3.projects where cost = (select min(cost) from homework_3.projects);
+SELECT *
+FROM `homework_3`.`projects`
+WHERE `cost` = (
+	SELECT MIN(`cost`)
+    FROM `homework_3`.`projects`);
