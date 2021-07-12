@@ -1,0 +1,1 @@
+select avg(salary) as `avarage salary` from homework_3.developers where id in (select developer_id from homework_3.`dev+projects` where project_id = (select `id` from homework_3.projects where cost = (select min(cost) from homework_3.projects)));

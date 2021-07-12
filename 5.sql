@@ -1,0 +1,1 @@
+select * from homework_3.projects where cost = (select min(cost) from homework_3.projects);

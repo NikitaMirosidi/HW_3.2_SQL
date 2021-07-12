@@ -1,0 +1,1 @@
+select sum(salary) as `java developers sum salary` from homework_3.developers where id in (select developer_id from homework_3.`dev+skills` where skill_id in (1, 2, 3));
